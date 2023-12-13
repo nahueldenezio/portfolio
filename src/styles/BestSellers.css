@@ -1,0 +1,81 @@
+/* BestSellers.css */
+
+/* Contenedor principal de los bestsellers */
+.bestsellers-container {
+    margin-top: 4rem; /* Margen superior del contenedor */
+    position: relative; /* Posición relativa para posicionar elementos secundarios */
+}
+
+/* Encabezado de los bestsellers */
+.h3-bestsellers {
+    font-family: 'Roboto', sans-serif; /* Tipo de fuente para el encabezado */
+    font-style: italic; /* Estilo de la fuente */
+    font-weight: 800; /* Peso de la fuente (negrita) */
+    font-size: 1.7rem; /* Tamaño de la fuente */
+    margin-left: 1.5rem; /* Margen izquierdo del encabezado */
+}
+
+/* Slider de los bestsellers */
+.bestsellers-slider {
+    width: 90%; /* Ancho del slider */
+    margin: 0 auto; /* Centrado horizontal del slider */
+}
+
+/* Flechas de navegación personalizadas */
+.custom-arrow {
+    font-size: 24px; /* Tamaño de la fuente de las flechas */
+    color: #333; /* Color de las flechas */
+    z-index: 1; /* Z-index para posicionar sobre el slider */
+    background-color: #fff; /* Color de fondo de las flechas */
+    border: 1px solid #ccc; /* Borde de las flechas */
+    border-radius: 50%; /* Borde redondeado para que sea circular */
+    width: 30px; /* Ancho de las flechas */
+    height: 30px; /* Altura de las flechas */
+    display: flex; /* Utiliza flexbox para centrar contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    cursor: pointer; /* Cursor indicando interactividad */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    position: absolute; /* Posición absoluta para colocar sobre el slider */
+    top: 50%; /* Posiciona verticalmente en el centro */
+    transform: translateY(-50%); /* Ajusta verticalmente según el tamaño */
+}
+
+.custom-arrow:hover {
+    color: #555; /* Cambia el color al pasar el mouse */
+    background-color: #eee; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.custom-prev {
+    left: -10px; /* Posición izquierda para la flecha izquierda */
+}
+
+.custom-next {
+    right: -10px; /* Posición derecha para la flecha derecha */
+}
+
+/* Oculta las flechas en modo mobile */
+@media screen and (max-width: 768px) {
+    .bestsellers-slider .slick-prev,
+    .bestsellers-slider .slick-next {
+        display: none !important; /* Oculta las flechas en dispositivos móviles */
+    }
+
+    .bestsellers-slider .slick-dots {
+        display: flex !important; /* Muestra los puntos de navegación como flexbox */
+        justify-content: center; /* Centra horizontalmente los puntos de navegación */
+        position: static; /* Restaura la posición estática de los puntos de navegación */
+        margin-top: 1rem; /* Ajusta según sea necesario */
+    }
+}
+
+/* Oculta los dots en la versión desktop */
+@media screen and (min-width: 1024px) {
+    .h3-bestsellers {
+        margin-left: 5rem; /* Ajusta el margen izquierdo del encabezado en version desktop */
+    }
+
+    .bestsellers-slider .slick-dots {
+        display: none !important; /* Oculta los puntos de navegación en version desktop */
+    }
+}

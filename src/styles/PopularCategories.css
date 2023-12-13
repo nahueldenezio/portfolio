@@ -1,0 +1,106 @@
+/* Estilos para las Categorías Populares */
+
+/* Contenedor principal */
+.popularcategories {
+    overflow-x: hidden;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título de Categorías Populares */
+.popularcategories-h3 {
+    align-items: start;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 24px;
+    text-align: start;
+    margin-left: 0.5rem;
+}
+
+/* Estilos para el slider */
+.popular-slider {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.popular-slider .slick-slider {
+    position: relative;
+}
+
+.popular-slider .slick-list {
+    overflow: hidden;
+}
+
+.popular-slider .slick-track {
+    display: flex;
+    justify-content: center;
+}
+
+.popular-slider .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.popular-slider .slick-prev,
+.popular-slider .slick-next {
+    font-size: 24px;
+}
+
+/* Efecto de hover para cambiar la opacidad de las imágenes y cursor pointer */
+.popular-category img {
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.popular-category img:hover {
+    opacity: 0.8; /* Ajusta la opacidad según sea necesario */
+}
+
+/* Estilos para la cuadrícula en escritorio */
+.desktop-grid {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .desktop-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .popular-slider {
+        display: none;
+    }
+
+    .category-text-desktop {
+        position: absolute;
+        margin-top: -5rem;
+        margin-left: 0.5rem;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 800;
+        font-size: 3vw;
+        color: var(--color-white);
+    }
+
+    .popular-category img,
+    .category-item img {
+        margin-bottom: 10px;
+    }
+
+    .popularcategories-h3 {
+        font-size: 2vw;
+        display: flex;
+        align-items: start;
+        margin-left: 4.5rem;
+    }
+}

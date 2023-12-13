@@ -1,0 +1,121 @@
+/* Estilos para el pie de página en dispositivos móviles */
+
+/* Contenedor principal del pie de página */
+.footer-container {
+  height: 681px; /* Altura del contenedor del pie de página */
+  background-color: #000000; /* Color de fondo del contenedor */
+  color: var(--color-white); /* Color del texto */
+  display: flex; /* Utiliza flexbox para organizar los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  flex-direction: column; /* Organiza los elementos en columna */
+}
+
+/* Encabezado del pie de página */
+.footer-container h2 {
+  padding: 0.5rem; /* Relleno del encabezado del pie de página */
+  color: var(--color-white); /* Color del texto del encabezado */
+  font-family: 'Roboto', sans-serif; /* Tipo de fuente del encabezado */
+  font-style: italic; /* Estilo de la fuente del encabezado */
+  font-size: 2rem; /* Tamaño de la fuente del encabezado */
+}
+
+/* Contenedor de botones en el pie de página */
+.btn-footer-container {
+  display: flex; /* Utiliza flexbox para organizar los botones */
+  flex-direction: column; /* Organiza los botones en columna */
+  align-items: center; /* Centra horizontalmente los botones */
+}
+
+/* Estilos para todos los botones del pie de página */
+.btn-footer, .btn-arrepentimiento, .btn-footer-sucursales {
+  font-family: "Rubik", sans-serif; /* Tipo de fuente de los botones */
+  border: none; /* Elimina los bordes de los botones */
+  margin: 0; /* Elimina el margen de los botones */
+  padding: 0; /* Elimina el relleno de los botones */
+  overflow: visible; /* Permite el desbordamiento de contenido */
+  background: transparent; /* Fondo transparente de los botones */
+  color: inherit; /* Utiliza el color heredado */
+  font: inherit; /* Utiliza la fuente heredada */
+  text-align: inherit; /* Utiliza la alineación de texto heredada */
+  cursor: pointer; /* Indica que los botones son interactivos */
+  /* Agrega más estilos según sea necesario */
+}
+
+/* Estilos específicos para los botones de footer y sucursales */
+.btn-footer, .btn-footer-sucursales {
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  font-size: 0.9rem; /* Tamaño de fuente de los botones */
+  font-weight: 500; /* Peso de la fuente de los botones */
+  line-height: 2rem; /* Altura de línea de los botones */
+}
+
+/* Estilos específicos para el botón de arrepentimiento */
+.btn-arrepentimiento {
+  margin: 1rem; /* Margen del botón de arrepentimiento */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  font-size: 0.75rem; /* Tamaño de fuente del botón de arrepentimiento */
+  font-weight: 400; /* Peso de la fuente del botón de arrepentimiento */
+  line-height: 0.8rem; /* Altura de línea del botón de arrepentimiento */
+  border: 1px solid var(--color-white); /* Borde del botón de arrepentimiento */
+  padding: 0.8rem; /* Relleno interno del botón de arrepentimiento */
+}
+
+/* Efectos hover para el botón de arrepentimiento */
+.btn-arrepentimiento:hover {
+  background-color: var(--color-white); /* Cambia el color de fondo al pasar el mouse */
+  color: #000000; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Efectos hover para los botones de footer y sucursales */
+.btn-footer:hover, .btn-footer-sucursales:hover {
+  color: #8e8e8e; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Información en el pie de página */
+.footer-info {
+  margin-top: 1rem; /* Margen superior de la información en el pie de página */
+  display: flex; /* Utiliza flexbox para organizar la información */
+  flex-direction: column; /* Organiza la información en columna */
+  align-items: center; /* Centra horizontalmente la información */
+  line-height: 0rem; /* Altura de línea reducida para mayor separación entre líneas */
+}
+
+/* Información específica de Pierce en el pie de página */
+.footer-Pierce-info {
+  margin-top: 2rem; /* Margen superior de la información específica de Pierce */
+  display: flex; /* Utiliza flexbox para organizar la información */
+  align-items: center; /* Centra horizontalmente la información */
+}
+
+/* Estilos para el texto en la información específica de Pierce */
+.footer-Pierce-info p {
+  font-weight: 400; /* Peso de la fuente del texto */
+  font-size: 0.75rem; /* Tamaño de fuente del texto */
+  margin-right: 1rem; /* Margen derecho del texto */
+}
+
+/* Logotipo de Pierce en el pie de página */
+.footer-Pierce-info img {
+  height: 0.9rem; /* Altura del logotipo de Pierce */
+}
+
+/* Sección final del pie de página */
+.footer-end {
+  display: flex; /* Utiliza flexbox para organizar la sección final del pie de página */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Imagen en la sección final del pie de página */
+.footer-end img {
+  margin: 0.5rem; /* Margen de la imagen */
+}
+
+/* Derechos de autor en la sección final del pie de página */
+.footer-copyright {
+  font-size: 0.75rem; /* Tamaño de fuente de los derechos de autor */
+}
+
+/* Logotipo de VTEX en el pie de página */
+.footer-vtex-logo {
+  height: 1.3rem; /* Altura del logotipo de VTEX */
+}
