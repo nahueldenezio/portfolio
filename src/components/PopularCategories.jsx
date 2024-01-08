@@ -15,8 +15,8 @@ function PopularCategories() {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "0", // Sin espacio entre imágenes
-    variableWidth: true, // Permitir ancho variable de las imágenes
+    centerPadding: "0", 
+    variableWidth: true, 
   };
 
   return (
@@ -50,17 +50,13 @@ function PopularCategories() {
         <div className="popular-categories-container desktop-grid">
           <div className="popular-category popular-category-left">
             <img src={videoCard} alt="Categoría 1" />
-            <div className="category-text-desktop text-1">PLACAS DE VIDEO</div>
+            <div className="category-text-desktop text-1">VIDEO</div>
           </div>
           <div className="popular-category popular-category-center-horizontal">
             <div className="category-item">
               <img src={Mouse} alt="Categoría 2" />
               <div className="category-text-desktop text-2">MOUSE</div>
             </div>
-            {/* <div className="category-item">
-              <img src={Keyboard} alt="Categoría 3" />
-              <div className="category-text-desktop text-3">TECLADOS</div>
-            </div> */}
           </div>
           <div className="popular-category popular-category-right">
             <img src={Headphone} alt="Categoría 4" />

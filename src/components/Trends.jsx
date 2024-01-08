@@ -6,7 +6,6 @@ import Cards from "./Cards";
 import "../styles/Trends.css";
 
 function Trends() {
-  // Función para la flecha personalizada "Anterior"
   function CustomPrevArrow(props) {
     const { onClick } = props;
     return (
@@ -16,7 +15,6 @@ function Trends() {
     );
   }
 
-  // Función para la flecha personalizada "Siguiente"
   function CustomNextArrow(props) {
     const { onClick } = props;
     return (
@@ -41,7 +39,7 @@ function Trends() {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          arrows: false, // Oculta flechas en modo móvil
+          arrows: false,
         },
       },
       {
