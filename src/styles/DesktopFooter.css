@@ -1,119 +1,89 @@
-/* Estilos para el pie de página en version desktop */
 
-/* Contenedor principal del pie de página */
 .footer-container-desktop {
-  height: 290px; /* Altura del contenedor del pie de página */
-  background-color: #000000; /* Color de fondo del contenedor */
-  color: var(--color-white); /* Color del texto */
-  display: flex; /* Utiliza flexbox para organizar los elementos */
-  justify-content: space-around; /* Distribuye uniformemente los elementos horizontalmente */
-  align-items: center; /* Centra verticalmente los elementos */
+  height: 290px; 
+  background-color: #3b3b3b; 
+  color: var(--color-white); 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-/* Encabezado principal del pie de página */
 .footer-container-desktop h2 {
-  margin-right: 4rem; /* Margen derecho del encabezado principal */
-  color: var(--color-white); /* Color del texto del encabezado principal */
-  font-family: 'Roboto', sans-serif; /* Tipo de fuente del encabezado principal */
-  font-style: italic; /* Estilo de la fuente del encabezado principal */
-  font-size: 2rem; /* Tamaño de la fuente del encabezado principal */
-  text-align: center; /* Alineación del texto al centro */
+  margin-right: 4rem; 
+  color: var(--color-white); 
+  font-family: 'Roboto', sans-serif; 
+  font-style: italic; 
+  font-size: 2rem; 
+  text-align: center;
 }
 
-/* Sección izquierda del pie de página */
 .footer-left-desktop {
-  display: flex; /* Utiliza flexbox para organizar los elementos */
-  flex-direction: column; /* Organiza los elementos en columna */
-  justify-content: space-between; /* Distribuye uniformemente los elementos verticalmente */
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
 }
 
-/* Información en la sección izquierda del pie de página */
 .footer-info-desktop {
-  margin: 3rem 0; /* Margen superior e inferior de la información */
+  margin: 3rem 0; 
 }
 
 .footer-info-desktop p {
-  line-height: 0.5; /* Altura de línea reducida para mayor separación entre líneas */
-  font-size: 0.8rem; /* Tamaño de fuente de la información */
+  line-height: 0.5; 
+  font-size: 0.8rem; 
 }
 
-/* Botones en el pie de página */
 .btn-footer-desktop,
 .btn-arrepentimiento-desktop,
 .btn-footer-sucursales-desktop {
-  font-family: "Rubik", sans-serif; /* Tipo de fuente de los botones */
-  border: none; /* Elimina los bordes de los botones */
-  margin: 0; /* Elimina el margen de los botones */
-  padding: 0; /* Elimina el relleno de los botones */
-  overflow: visible; /* Permite el desbordamiento de contenido */
-  background: transparent; /* Fondo transparente de los botones */
-  color: inherit; /* Utiliza el color heredado */
-  font: inherit; /* Utiliza la fuente heredada */
-  text-align: inherit; /* Utiliza la alineación de texto heredada */
-  cursor: pointer; /* Indica que los botones son interactivos */
-  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  font-family: "Rubik", sans-serif; 
+  border: none; 
+  margin: 0; 
+  padding: 0; 
+  overflow: visible; 
+  background: transparent; 
+  color: inherit; 
+  font: inherit; 
+  text-align: inherit; 
+  cursor: pointer; 
+  text-transform: uppercase; 
 }
 
-/* Contenedor de los botones en el pie de página */
 .btn-footer-container-desktop {
-  display: flex; /* Utiliza flexbox para organizar los botones */
-  flex-direction: column; /* Organiza los botones en columna */
-  justify-content: flex-start; /* Alinea los botones al inicio */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start;
 }
 
-/* Botón especial para arrepentimiento en el pie de página */
 .btn-arrepentimiento-desktop {
-  margin: 1.5rem 0; /* Margen superior e inferior del botón de arrepentimiento */
-  text-align: center; /* Alineación del texto al centro */
-  font-size: 0.9rem; /* Tamaño de fuente del botón de arrepentimiento */
-  font-weight: 400; /* Peso de la fuente del botón de arrepentimiento */
-  line-height: 0.8rem; /* Altura de línea reducida para mayor separación entre líneas */
-  border: 1px solid var(--color-white); /* Borde del botón de arrepentimiento */
-  padding: 0.8rem; /* Relleno interno del botón de arrepentimiento */
+  margin: 1.5rem 0; 
+  text-align: center; 
+  font-size: 0.9rem; 
+  font-weight: 400; 
+  line-height: 0.8rem; 
+  border: 1px solid var(--color-white); 
+  padding: 0.8rem; 
 }
 
 .btn-arrepentimiento-desktop:hover {
-  background-color: var(--color-white); /* Cambia el color de fondo al pasar el mouse */
-  color: #000000; /* Cambia el color del texto al pasar el mouse */
+  background-color: var(--color-white); 
+  color: #000000; 
 }
 
-/* Efectos hover para botones en el pie de página */
 .btn-footer-desktop:hover,
 .btn-footer-sucursales-desktop:hover {
-  color: #8e8e8e; /* Cambia el color del texto al pasar el mouse */
+  color: #8e8e8e; 
 }
 
-/* Sección de información de Pierce en el pie de página */
-.footer-Pierce-info-desktop {
-  display: flex; /* Utiliza flexbox para organizar la información de Pierce */
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: space-around; /* Distribuye uniformemente los elementos horizontalmente */
-}
-
-/* Logotipo de Pierce en el pie de página */
-.piercelogo {
-  margin: 0 0.5rem; /* Margen del logotipo de Pierce */
-  height: 0.9rem; /* Altura del logotipo de Pierce */
-}
-
-/* Logotipo de VTEX en el pie de página */
-.footer-vtex-logo-desktop {
-  height: 1.1rem; /* Altura del logotipo de VTEX */
-}
-
-/* Sección final del pie de página */
 .footer-end-desktop {
-  display: flex; /* Utiliza flexbox para organizar la sección final del pie de página */
-  align-items: center; /* Centra verticalmente los elementos */
+  display: flex; 
+  align-items: center;
 }
 
-/* Imagen en la sección final del pie de página */
 .footer-end-desktop img {
-  position: absolute; /* Posición absoluta para la imagen */
-  right: 0; /* Posición a la derecha de la sección final */
+  position: absolute; 
+  right: 0; 
 }
 
-/* Derechos de autor en la sección final del pie de página */
 .footer-copyright-desktop {
-  font-size: 0.75rem; /* Tamaño de fuente de los derechos de autor */
+  font-size: 0.75rem; 
 }

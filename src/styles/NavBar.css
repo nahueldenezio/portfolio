@@ -1,6 +1,4 @@
-/* Estilos para la barra de navegación */
 
-/* Barra de navegación en general */
 nav {
   padding: 10px;
   background-color: var(--color-white);
@@ -8,19 +6,17 @@ nav {
   height: 95px;
 }
 
-/* Contenido de la barra de navegación en modo desktop */
 .desktop-nav {
   display: none;
 }
 
-/* Contenido de la barra de navegación en modo móvil */
 .mobile-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 2rem;
 }
 
-/* Parte superior de la barra de navegación en modo móvil */
 .mobile-nav-top {
   height: 50px;
   display: flex;
@@ -31,7 +27,6 @@ nav {
   line-height: 1.6;
 }
 
-/* Íconos de usuario y carrito en modo móvil */
 div.user, div.cart {
   cursor: pointer;
   color: var(--color-grey);
@@ -39,7 +34,6 @@ div.user, div.cart {
   margin-right: 1rem;
 }
 
-/* Contenedor de íconos en modo móvil */
 .nav-icons {
   display: flex;
   justify-content: space-around;
@@ -47,7 +41,6 @@ div.user, div.cart {
   margin-right: 0.5rem;
 }
 
-/* Ícono de menú hamburguesa en modo móvil */
 .burger-icon {
   cursor: pointer;
   font-size: 1.5rem;
@@ -55,7 +48,6 @@ div.user, div.cart {
   margin-left: 1.5rem;
 }
 
-/* Botón para cerrar el menú en modo móvil */
 .close-menu {
   background: none;
   border: none;
@@ -66,7 +58,6 @@ div.user, div.cart {
   outline: none;
 }
 
-/* Menú móvil */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -81,12 +72,10 @@ div.user, div.cart {
   z-index: 999;
 }
 
-/* Contenido del menú móvil abierto */
 .mobile-menu-open {
   display: flex;
 }
 
-/* Contenido del menú móvil */
 .mobile-menu-content {
   width: 100%;
   display: flex;
@@ -98,7 +87,6 @@ div.user, div.cart {
   justify-content: space-around;
 }
 
-/* Texto superior en el menú móvil */
 .mobile-menu-content-span {
   color: #0F1E7B;
   font-family: 'Roboto', sans-serif;
@@ -109,13 +97,11 @@ div.user, div.cart {
   margin-right: 9rem;
 }
 
-/* Contenedor de enlace de ofertas en el menú móvil */
 .link-Ofertas-container {
   cursor: pointer;
   padding-top: 10px;
 }
 
-/* Estilos para el enlace de ofertas en el menú móvil */
 .link-Ofertas {
   color: var(--color-red);
   font-family: 'Roboto', sans-serif;
@@ -127,12 +113,10 @@ div.user, div.cart {
   margin: 15px 0;
 }
 
-/* Efecto hover para el enlace de ofertas en el menú móvil */
 .link-Ofertas:hover {
   color: #b40c00;
 }
 
-/* Estilos para los enlaces del menú móvil */
 .mobile-menu-content-link-a {
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
@@ -146,20 +130,17 @@ div.user, div.cart {
   line-height: 24px;
 }
 
-/* Contenedor de enlaces en el menú móvil */
 .mobile-menu-content-link {
   width: 80%;
   display: flex;
   flex-direction: column;
 }
 
-/* Ícono de globo en modo móvil */
 .icon-earth {
   color: var(--color-red);
   margin-left: 0.3rem;
 }
 
-/* Ícono de cierre en el menú móvil */
 .close-icon {
   position: absolute;
   z-index: 100;
@@ -168,7 +149,6 @@ div.user, div.cart {
   cursor: pointer;
 }
 
-/* Contenedor de la barra de búsqueda en modo móvil */
 .search-bar-container {
   margin: auto auto;
   display: flex;
@@ -176,7 +156,6 @@ div.user, div.cart {
   width: 95%;
 }
 
-/* Barra de búsqueda en modo móvil */
 .search-bar {
   position: relative;
   display: flex;
@@ -184,7 +163,6 @@ div.user, div.cart {
   width: 100%;
 }
 
-/* Entrada de la barra de búsqueda en modo móvil */
 .search-bar-input {
   width: 100%;
   padding: 10px;
@@ -192,7 +170,6 @@ div.user, div.cart {
   border-radius: 25px;
 }
 
-/* Ícono de búsqueda en modo móvil */
 .search-icon {
   position: absolute;
   right: 10px;
@@ -200,7 +177,6 @@ div.user, div.cart {
   cursor: pointer;
 }
 
-/* Línea de separación en la barra de búsqueda en modo móvil */
 .line {
   position: absolute;
   border-top: 1px solid black;
@@ -208,13 +184,10 @@ div.user, div.cart {
   width: 100%;
   margin: 20px auto 0 auto;
 }
-
-/* Línea de separación en los enlaces del menú móvil */
 .line-link {
   border-top: 0.65px solid black;
 }
 
-/* Estilo para el enlace en modo móvil */
 .mobile-nav-top h1 a {
   color: #0F1E7B;
   width: 100%;
@@ -226,7 +199,6 @@ div.user, div.cart {
   font-size: 1.8rem;
 }
 
-/* Ícono de búsqueda en modo móvil */
 .search-icon-mobile {
   position: absolute;
   right: 10px;
@@ -239,14 +211,11 @@ div.user, div.cart {
   left: 33%;
 }
 
-/* Media query para dispositivos de escritorio */
 @media (min-width: 768px) {
-  /* Oculta el menú móvil en modo desktop */
   .mobile-nav {
     display: none;
   }
 
-  /* Muestra el contenido de la barra de navegación en modo desktop */
   .desktop-nav {
     display: flex;
     flex-direction: column;
@@ -254,7 +223,6 @@ div.user, div.cart {
     line-height: 1.5rem;
   }
 
-  /* Parte superior de la barra de navegación en modo desktop */
   .desktop-nav-top {
     width: 100%;
     display: flex;
@@ -263,7 +231,6 @@ div.user, div.cart {
     align-items: center;
   }
 
-  /* Estilos para el logotipo en modo desktop */
   .logo h1 a {
     color: #0F1E7B;
     width: 100%;
@@ -279,12 +246,10 @@ div.user, div.cart {
     font-size: 2rem;
   }
 
-  /* Estilos para la barra de búsqueda en modo desktop */
   .search-bar-desktop {
     width: 50%;
   }
 
-  /* Contenedor de entrada de la barra de búsqueda en modo desktop */
   .search-bar-input-container-desktop {
     display: flex;
     align-items: center;
@@ -293,7 +258,6 @@ div.user, div.cart {
     position: relative;
   }
 
-  /* Estilos para la entrada de la barra de búsqueda en modo desktop */
   .search-bar-input {
     width: 100%;
     padding: 10px;
@@ -302,7 +266,6 @@ div.user, div.cart {
     text-align: center;
   }
 
-  /* Estilos para el ícono de búsqueda en modo desktop */
   .search-icon-dekstop {
     font-size: 1.2rem;
     color: #BABABA;
@@ -311,23 +274,19 @@ div.user, div.cart {
     cursor: pointer;
   }
 
-  /* Contenedor de la parte derecha de la barra de navegación en modo desktop */
   .nav-right-desktop {
     display: flex;
     margin-right: 4rem;
   }
 
-  /* Estilos para el ícono de usuario */
   .user span {
     margin-left: 10px;
   }
 
-  /* Efectos hover para los íconos de usuario y carrito */
   .user:hover, .cart:hover {
     color: #b2b2b2;
   }
 
-  /* Contenedor de enlaces en el menú desktop */
   .desktop-menu-content-link {
     display: flex;
     width: 90%;
@@ -335,7 +294,6 @@ div.user, div.cart {
     margin-top: 1rem;
   }
 
-  /* Estilos para los enlaces del menú desktop */
   .desktop-menu-content-link-a {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
@@ -349,7 +307,6 @@ div.user, div.cart {
     line-height: 24px;
   }
 
-  /* Efecto hover para los enlaces del menú desktop */
   .desktop-menu-content-link-a:hover {
     color: #000000;
   }

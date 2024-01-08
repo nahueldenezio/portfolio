@@ -1,11 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import "../styles/PopularCategories.css";
-import Ball from "../assets/ball.png";
-import Bots from "../assets/bots.png";
-import sneakers from "../assets/Sneakers.png";
-import Breeches from "../assets/Breeches.png";
-import BotsMobile from "../assets/BotsMobile.png";
+import Mouse from "../assets/mouse.png";
+import Headphone from "../assets/headphones.png";
+import Keyboard from "../assets/keyboard.png";
+import videoCard from "../assets/videoCard.png";
 
 function PopularCategories() {
   // Configuración del slider
@@ -29,47 +28,43 @@ function PopularCategories() {
 
         {/* Slider para dispositivos móviles */}
         <Slider {...sliderSettings} className="popular-slider">
-          {/* Categoría 2 */}
           <div className="popular-category">
-            <img src={Bots} alt="Categoría 2" />
+            <img src={Mouse} alt="Categoría 2" />
             <div className="category-text-mobile text-2-mobile">Texto 2</div>
           </div>
-          {/* Categoría 3 */}
           <div className="popular-category">
-            <img src={Breeches} alt="Categoría 3" />
+            <img src={Keyboard} alt="Categoría 3" />
             <div className="category-text-mobile text-3-mobile">Texto 3</div>
           </div>
-          {/* Categoría 1 */}
           <div className="popular-category">
-            <img src={BotsMobile} alt="Categoría 1" />
+            <img src={videoCard} alt="Categoría 1" />
             <div className="category-text-mobile text-1-mobile">Texto 1</div>
+          </div>
+          <div className="popular-category">
+            <img src={Headphone} alt="Categoría 4" />
+            <div className="category-text-mobile text-4-mobile">Texto 4</div>
           </div>
         </Slider>
 
         {/* Cuadrícula para escritorio */}
         <div className="popular-categories-container desktop-grid">
-          {/* Categoría 1 */}
           <div className="popular-category popular-category-left">
-            <img src={sneakers} alt="Categoría 1" />
-            <div className="category-text-desktop text-1">ZAPATILLAS</div>
+            <img src={videoCard} alt="Categoría 1" />
+            <div className="category-text-desktop text-1">PLACAS DE VIDEO</div>
           </div>
-          {/* Categoría 2 y 3 */}
           <div className="popular-category popular-category-center-horizontal">
-            {/* Categoría 2 */}
             <div className="category-item">
-              <img src={Bots} alt="Categoría 2" />
-              <div className="category-text-desktop text-2">FUTBOL</div>
+              <img src={Mouse} alt="Categoría 2" />
+              <div className="category-text-desktop text-2">MOUSE</div>
             </div>
-            {/* Categoría 3 */}
-            <div className="category-item">
-              <img src={Breeches} alt="Categoría 3" />
-              <div className="category-text-desktop text-3">CALZAS</div>
-            </div>
+            {/* <div className="category-item">
+              <img src={Keyboard} alt="Categoría 3" />
+              <div className="category-text-desktop text-3">TECLADOS</div>
+            </div> */}
           </div>
-          {/* Categoría 4 */}
           <div className="popular-category popular-category-right">
-            <img src={Ball} alt="Categoría 4" />
-            <div className="category-text-desktop text-4">PELOTAS</div>
+            <img src={Headphone} alt="Categoría 4" />
+            <div className="category-text-desktop text-4">AURICULARES</div>
           </div>
         </div>
       </div>

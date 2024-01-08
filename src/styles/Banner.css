@@ -1,66 +1,59 @@
-/* Banner.css */
 
-/* Configuración general del banner */
 .banner {
   width: 100%;
-  margin: 5px auto; /* Centra el banner y proporciona un pequeño margen */
-  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+  margin: 5px auto; 
+  overflow-x: hidden; 
 }
 
-/* Estilos para el slider */
 .slick-slider {
-  margin: 0; /* Elimina el margen predeterminado del slider */
-  padding: 0; /* Elimina el relleno predeterminado del slider */
-  outline: none; /* Elimina el contorno alrededor del slider en el enfoque */
+  margin: 0; 
+  padding: 0; 
+  outline: none; 
 }
 
-/* Estilos para los puntos de navegación */
 .slick-dots {
-  position: absolute; /* Posiciona los puntos de navegación */
-  bottom: 10px; /* Espacio desde la parte inferior del banner */
-  list-style: none; /* Elimina los estilos de lista predeterminados */
-  display: flex !important; /* Utiliza flexbox para alinear horizontalmente los puntos */
-  justify-content: center; /* Centra los puntos horizontalmente */
-  align-items: center; /* Centra los puntos verticalmente */
-  padding: 0; /* Elimina el relleno interno */
-  margin: 0; /* Elimina el margen externo */
+  position: absolute; 
+  bottom: 10px; 
+  list-style: none; 
+  display: flex !important; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .slick-dots li {
-  margin: 0 4px; /* Espacio entre los puntos de navegación */
+  margin: 0 4px; 
 }
 
-/* Estilos para las imágenes en el banner */
 .banner-img img {
-  width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+  width: 100%;
 }
 
-/* Estilos para los botones de los puntos de navegación */
 .slick-dots button {
-  width: 5px; /* Ancho de los botones de los puntos de navegación */
-  height: 5px; /* Altura de los botones de los puntos de navegación */
-  border-radius: 50%; /* Hace que los botones sean circulares */
-  background-color: var(--color-white); /* Color de fondo de los botones */
-  border: 2px solid #333; /* Borde de los botones */
-  cursor: pointer; /* Establece el cursor a una mano para indicar interactividad */
+  width: 5px; 
+  height: 5px; 
+  border-radius: 50%;
+  background-color: var(--color-white); 
+  border: 2px solid #333;
+  cursor: pointer; 
 }
 
 .slick-dots .slick-active button {
-  background-color: var(--color-white); /* Cambia el color de fondo del botón activo */
+  background-color: var(--color-white);
 }
 
-/* Media query para dispositivos más grandes */
 @media (min-width: 768px) {
   .banner {
-    margin-top: 1.5rem; /* Añade un margen superior en dispositivos más grandes */
+    margin-top: 1.5rem; 
   }
 
   .banner-img img {
-    content: url('../assets/BannerImgDesktop.png'); /* Cambia la imagen para dispositivos más grandes */
+    content: url('../assets/Banner.jpg'); 
   }
 
   .slick-dots {
-    position: absolute; /* Reajusta la posición de los puntos de navegación */
-    bottom: 50px; /* Ajusta el espacio desde la parte inferior del banner */
+    position: absolute; 
+    bottom: 50px; 
   }
 }

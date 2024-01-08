@@ -1,6 +1,4 @@
-/* Estilos para Trends.js */
 
-/* Estilos comunes para flechas de carousels */
 .custom-arrow {
   font-size: 24px;
   color: #333;
@@ -20,6 +18,7 @@
   transform: translateY(-50%);
 }
 
+
 .custom-arrow:hover {
   color: #555;
   background-color: #eee;
@@ -33,7 +32,6 @@
   right: -10px;
 }
 
-/* Contenedor principal */
 .trends-container {
   margin-top: 2rem;
   height: 566px;
@@ -41,7 +39,6 @@
   padding: 20px;
 }
 
-/* Título de Trends */
 .h3-trends {
   color: var(--color-white);
   font-family: 'Roboto', sans-serif;
@@ -51,7 +48,6 @@
   display: flex;
 }
 
-/* Estilos para el slider */
 .trends-slider {
   width: 90%;
   margin: 0 auto;

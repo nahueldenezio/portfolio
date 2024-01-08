@@ -56,20 +56,20 @@ const Navbar = () => {
               <div className="line"></div>
             </div>
             <div className="mobile-menu-content-link">
-              <Link to="/muebles" className="mobile-menu-content-link-a">
-                Muebles
+              <Link to="/notebooks" className="mobile-menu-content-link-a">
+                Notebooks
               </Link>
               <div className="line-link"></div>
-              <Link to="/calzados" className="mobile-menu-content-link-a">
-                Calzados
+              <Link to="/celulares" className="mobile-menu-content-link-a">
+                Celulares
               </Link>
               <div className="line-link"></div>
-              <Link to="/colchones" className="mobile-menu-content-link-a">
-                Colchones
+              <Link to="/teclados" className="mobile-menu-content-link-a">
+                Teclados
               </Link>
               <div className="line-link"></div>
-              <Link to="/herramientas" className="mobile-menu-content-link-a">
-                Herramientas
+              <Link to="/accesorios" className="mobile-menu-content-link-a">
+                Accesorios
               </Link>
               <div className="line-link"></div>
               <div className="link-Ofertas-container">
@@ -122,20 +122,20 @@ const Navbar = () => {
         </div>
 
         <div className="desktop-menu-content-link">
-          <Link to="/muebles" className="desktop-menu-content-link-a">
-            Muebles
+          <Link to="/notebooks" className="desktop-menu-content-link-a">
+            Notebooks
           </Link>
           <div className="line-link"></div>
-          <Link to="/calzados" className="desktop-menu-content-link-a">
-            Calzados
+          <Link to="/celulares" className="desktop-menu-content-link-a">
+            Celulares
           </Link>
           <div className="line-link"></div>
-          <Link to="/colchones" className="desktop-menu-content-link-a">
-            Colchones
+          <Link to="/teclados" className="desktop-menu-content-link-a">
+            Teclados
           </Link>
           <div className="line-link"></div>
-          <Link to="/herramientas" className="desktop-menu-content-link-a">
-            Herramientas
+          <Link to="/accesorios" className="desktop-menu-content-link-a">
+            Accesorios
           </Link>
           <div className="line-link"></div>
           <div className="link-Ofertas-container">

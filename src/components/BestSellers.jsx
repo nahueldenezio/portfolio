@@ -4,10 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
 import Cards from "./Cards";
-import "../styles/BestSellers.css";  // Importación de estilos específicos para las mejores vendedoras
+import "../styles/BestSellers.css";  
 
 function BestSellers() {
-  // Función para renderizar una flecha personalizada para la navegación anterior
   function CustomPrevArrow(props) {
     const { onClick } = props;
     return (
@@ -17,7 +16,6 @@ function BestSellers() {
     );
   }
 
-  // Función para renderizar una flecha personalizada para la navegación siguiente
   function CustomNextArrow(props) {
     const { onClick } = props;
     return (
@@ -27,7 +25,6 @@ function BestSellers() {
     );
   }
 
-  // Configuración del slider con opciones como navegación de puntos, desplazamiento y velocidad
   const settings = {
     dots: true,
     infinite: true,
@@ -55,14 +52,11 @@ function BestSellers() {
   };
 
   return (
-    // Estructura de la sección de las mejores vendedoras que incluye un encabezado y un slider de tarjetas
     <section>
       {" "}
       <div className="bestsellers-container">
         <h3 className="h3-bestsellers">LAS MAS VENDIDAS</h3>
-        {/* Componente Slider de la librería react-slick con la configuración previamente definida */}
         <Slider {...settings} className="bestsellers-slider">
-          {/* Renderiza varias tarjetas de productos dentro del slider */}
           <Cards />
           <Cards />
           <Cards />

@@ -1,68 +1,58 @@
-/* Estilos para la sección de información (Info) */
 
-/* Contenedor principal de la sección de información */
 .info-container {
-  display: flex; /* Utiliza flexbox para organizar los elementos */
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
-  height: 350px; /* Altura de la sección de información */
-  background-color: #ececec; /* Color de fondo de la sección de información */
-  margin-top: 2rem; /* Margen superior de la sección de información */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 350px; 
+  background-color: #ececec; 
+  margin-top: 2rem; 
 }
 
-/* Estilos para el slider en dispositivos móviles */
 .slider {
-  width: 80%; /* Ancho del slider en dispositivos móviles */
+  width: 80%; 
 }
 
-/* Contenedor de información en dispositivos desktop */
 .desktop-info-container {
-  display: flex; /* Utiliza flexbox para organizar los elementos */
-  justify-content: space-between; /* Distribuye uniformemente los elementos horizontalmente */
-  align-items: center; /* Centra verticalmente los elementos */
-  width: 80%; /* Ancho del contenedor de información en desktop */
-  margin: 0 auto; /* Centra el contenedor de información en el centro */
-  padding: 20px; /* Relleno interno del contenedor de información */
-  box-sizing: border-box; /* Incluye el padding en el ancho total del contenedor */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 80%; 
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box; 
 }
 
-/* Estilos para cada diapositiva de información */
 .info-slide {
-  text-align: center; /* Alineación del texto al centro */
-  flex: 1; /* Ocupa el espacio disponible en el contenedor */
+  text-align: center;
+  flex: 1; 
 }
 
-/* Contenido de cada diapositiva de información */
 .info-content {
-  display: flex; /* Utiliza flexbox para organizar los elementos internos */
-  flex-direction: column; /* Organiza los elementos internos en columna */
-  align-items: center; /* Centra horizontalmente los elementos internos */
-  margin: 3rem; /* Margen exterior de cada diapositiva */
-  padding-top: 1rem; /* Relleno superior de cada diapositiva */
-  padding-bottom: 1rem; /* Relleno inferior de cada diapositiva */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 3rem; 
+  padding-top: 1rem; 
+  padding-bottom: 1rem;
 }
 
-/* Icono de cada diapositiva de información */
 .info-icon {
-  font-size: 24px; /* Tamaño del icono */
-  margin-bottom: 10px; /* Margen inferior del icono */
+  font-size: 24px; 
+  margin-bottom: 10px; 
 }
 
-/* Título de cada diapositiva de información */
 .info-title {
-  margin-bottom: 5px; /* Margen inferior del título */
-  font-family: "Rubik", sans-serif; /* Tipo de fuente del título */
-  font-weight: 700; /* Peso de la fuente del título */
-  font-size: 1.1rem; /* Tamaño de fuente del título */
-  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  margin-bottom: 5px;
+  font-family: "Rubik", sans-serif; 
+  font-weight: 700; 
+  font-size: 1.1rem; 
+  text-transform: uppercase; 
 }
 
-/* Icono personalizado de cada diapositiva de información */
 .custom-icon {
-  font-size: 4rem; /* Tamaño del icono personalizado */
+  font-size: 4rem; 
 }
 
-/* Estilos para dispositivos móviles */
 .info-container.mobile {
-  height: auto; /* Altura automática en dispositivos móviles */
+  height: auto; 
 }

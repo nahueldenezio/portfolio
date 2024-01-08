@@ -1,78 +1,68 @@
-/* Estilos para Cards.css */
 
-/* Contenedor principal de las tarjetas */
 .card-container {
-    margin-right: 2px; /* Margen derecho del contenedor */
-    display: flex; /* Utiliza flexbox para organizar las tarjetas */
-    justify-content: center; /* Centra horizontalmente las tarjetas */
-    align-items: center; /* Centra verticalmente las tarjetas */
+    margin-right: 2px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-/* Estilos generales para las tarjetas */
 .card {
-    background-color: #fff; /* Color de fondo de la tarjeta */
-    cursor: pointer; /* Indica que la tarjeta es interactiva */
-    border: 1px solid #ccc; /* Borde de la tarjeta */
-    border-radius: 8px; /* Borde redondeado de la tarjeta */
-    overflow: hidden; /* Oculta cualquier contenido que desborde */
-    width: 100%; /* Ancho completo de la tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
-    transition: transform 0.3s ease-in-out; /* Transición suave al cambiar la escala */
-    max-width: 200px; /* Ancho máximo de la tarjeta */
-    display: flex; /* Utiliza flexbox para organizar elementos internos */
-    flex-direction: column; /* Organiza los elementos internos en columna */
-    align-items: center; /* Centra horizontalmente los elementos internos */
+    background-color: #fff; 
+    cursor: pointer; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
+    max-width: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
-/* Imagen de la tarjeta */
 .card-img {
-    width: 100%; /* Ancho completo de la imagen */
-    margin-top: 0.5rem; /* Margen superior de la imagen */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    width: 100%; 
+    margin-top: 0.5rem;
+    object-fit: cover; 
 }
 
-/* Contenido de la tarjeta */
 .card-content {
-    padding: 16px; /* Relleno interno del contenido */
-    text-align: center; /* Alineación del texto al centro */
+    padding: 16px; 
+    text-align: center;
 }
 
-/* Nombre del producto en la tarjeta */
 .product-name {
-    font-family: 'Roboto', sans-serif; /* Tipo de fuente del nombre del producto */
-    color: var(--color-grey); /* Color del texto del nombre del producto */
-    font-size: 1rem; /* Tamaño de fuente del nombre del producto */
-    margin-bottom: 8px; /* Margen inferior del nombre del producto */
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-grey); 
+    font-size: 1rem;
+    margin-bottom: 8px;
 }
 
-/* Precio del producto en la tarjeta */
 .product-price {
-    font-family: 'Roboto', sans-serif; /* Tipo de fuente del precio del producto */
-    font-size: 16px; /* Tamaño de fuente del precio del producto */
-    margin-bottom: 8px; /* Margen inferior del precio del producto */
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    margin-bottom: 8px; 
 }
 
-/* Botón de compra en la tarjeta */
 .buy-button {
-    border: 1px solid var(--color-red); /* Borde del botón de compra */
-    background-color: var(--color-white); /* Color de fondo del botón de compra */
-    color: var(--color-red); /* Color del texto del botón de compra */
-    padding: 10px 16px; /* Relleno interno del botón de compra */
-    border-radius: 25px; /* Borde redondeado del botón de compra */
-    cursor: pointer; /* Indica que el botón es interactivo */
-    font-size: 16px; /* Tamaño de fuente del botón de compra */
-    font-family: 'Encode Sans', sans-serif; /* Tipo de fuente del botón de compra */
+    border: 1px solid var(--color-red); 
+    background-color: var(--color-white);
+    color: var(--color-red);
+    padding: 10px 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px;
+    font-family: 'Encode Sans', sans-serif; 
 }
 
-/* Efecto hover para el botón de compra */
 .buy-button:hover {
-    background-color: var(--color-red); /* Cambia el color de fondo al pasar el mouse */
-    color: var(--color-white); /* Cambia el color del texto al pasar el mouse */
+    background-color: var(--color-red); 
+    color: var(--color-white); 
 }
 
-/* Media query para dispositivos más grandes */
 @media screen and (min-width: 1024px) {
     .card {
-        max-width: 250px; /* Ajusta el ancho máximo de la tarjeta en dispositivos más grandes */
+        max-width: 250px;
     }
 }
